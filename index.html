@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Entrepreneurship Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Youth Entrepreneurship Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Create Profile</a></li>
+                <li><a href="#mentorship">Find Mentors</a></li>
+                <li><a href="#funding">Funding Opportunities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to the Hub</h2>
+        <p>Empowering young entrepreneurs with mentors, funding, and resources to grow their businesses.</p>
+    </section>
+
+    <!-- Profile Creation Section -->
+    <section id="profile">
+        <h2>Create Your Profile</h2>
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="business">Business/Idea:</label>
+            <input type="text" id="business" name="business" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="skills">Skills/Needs:</label>
+            <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="profileOutput"></div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentorship">
+        <h2>Find a Mentor</h2>
+        <div class="mentor-list">
+            <!-- Mentors will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Funding Opportunities Section -->
+    <section id="funding">
+        <h2>Funding Opportunities</h2>
+        <ul id="fundingList">
+            <!-- Funding opportunities will be dynamically added here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Youth Entrepreneurship Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
